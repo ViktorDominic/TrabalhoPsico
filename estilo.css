@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    /* Comentário */
+}
+
+
+/* margem adicionada */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+.topo {
+    background-color: #151515;
+    width: 100%;
+    padding: 40px;
+    float: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    height: 480px;
+    background: #1E1E1E;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    /* remove a linha do link*/
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background: #2B2B2B;
+    height: 480px;
+}
+
+section {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background: #151515;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*cor das fontes começo img {
+    width: 100%;
+} */
+
+
+/*cor das fontes começo*/
+
+h2 {
+    color: #0000FF;
+}
+
+h3 {
+    color: #ADD8E6;
+}
+
+p {
+    color: white;
+}
+
+h6 {
+    color: white;
+}
+
+
+/*cor das fontes fim*/
+
+
+/*animacao P começo*/
+
+p,
+h1,
+h2,
+h3,
+h6 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+/*animacao P fim*/
+
+@media (max-width: 600px) {
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
